@@ -1,0 +1,9 @@
+Django==3.2.1
+djangorestframework==3.13.1
+nltk==3.8.1
+protobuf==4.25.3
+python-dotenv==1.0.1
+Requests==2.31.0
+textblob==0.18.0.post0
+google-generativeai
+
