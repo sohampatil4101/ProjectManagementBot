@@ -142,7 +142,7 @@ class PostQuery(APIView):
 
 
 load_dotenv()
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key="AIzaSyAje4c-yOKwI8GcBgO0EdrnCx-uum0hW20")
 
 def get_gemini_response(input_text):
     model = genai.GenerativeModel('gemini-pro')
@@ -195,7 +195,7 @@ def detect_mental_health_related(input_text):
                                 "durability", "robustness", "endurance", "sustainability", "viability", "resilience", "adaptability", "flexibility",
                                 "agility", "nimbleness", "responsiveness", "quickness", "promptness", "swiftness", "velocity", "momentum", "pace",
                                 "tempo", "rhythm", "cadence", "speed", "acceleration", "deceleration", "stagnation", "halt", "pause", "break",
-                                "interruption", "delay", "lag", "downtime", "bottleneck", "obstacle", "barrier", "constraint"]
+                                "interruption", "delay", "lag", "downtime", "bottleneck", "obstacle", "barrier", "constraint", "issue", "error", "coding", "frontend", "backend", "api"]
     for keyword in mental_health_keywords:
         if keyword in input_text.lower():
             return True
